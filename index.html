@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="static/style.css" rel="stylesheet" type="text/css" />
+    <script src="//cdn.muicss.com/mui-latest/js/mui.min.js"></script>
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link href="//cdn.muicss.com/mui-latest/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="static/index.js"></script>
+    <title>FPMI-Helper</title>
+</head>
+<body>
+    <div id="sidedrawer" class="mui--no-user-select" style="background-color: orange;">
+        <div id="sidedrawer-brand" class="mui--appbar-line-height" style="background-color: orange;">
+          <span class="mui--text-title">FPMI-Helper</span>
+        </div>
+        <div class="mui-divider"></div>
+        <ul>
+          <li>
+            <button type="button" class="btn btn-link text-center text-dark to-home" id="home">Home</button>
+          </li>
+          <li>
+            <button type="button" class="btn btn-link text-center text-dark" onclick="redirectToShedule()">Расписание студентов</button>
+          </li>
+        </ul>
+      </div>
+      <header id="header">
+        <div class="mui-appbar mui--appbar-line-height">
+          <div class="mui-container-fluid">
+            <a class="sidedrawer-toggle mui--visible-xs-inline-block mui--visible-sm-inline-block js-show-sidedrawer">☰</a>
+            <a class="sidedrawer-toggle mui--hidden-xs mui--hidden-sm js-hide-sidedrawer">☰</a>
+            <span class="mui--text-title mui--visible-xs-inline-block mui--visible-sm-inline-block">FPMI-Helper</span>
+          </div>
+        </div>
+      </header>
+      <div id="content-wrapper">
+        <div class="mui--appbar-height"></div>
+        <div class="mui-container-fluid" id="main-area">
+          <br>
+          <h1>FPMI-Helper</h1>
+          <p>Добро пожаловать в FPMI-Helper</p>
+          <p>Здесь вы сможете узнать свое распиание</p>
+          <button class="btn btn-success to-shedule" onclick="redirectToShedule()">Узнать распиание</button>
+        </div>
+      </div>
+      <footer id="footer">
+        <div class="mui-container-fluid">
+          <br>
+          Made with ♥ by <a href="https://www.muicss.com">MUI</a>
+        </div>
+      </footer>
+      <!-- <input type="file" /> -->
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.8/xlsx.full.min.js"></script>
+<script src="fpmi/HtmlService.js"></script>
+<script src="fpmi/XlsxService.js"></script>
+<script src="fpmi/PE.js"></script>
+<script src="fpmi/Parser.js"></script>
+<script src="fpmi/LinksService.js"></script>
+<script src="script.js"></script>
+<script src="ui.js"></script>
+</body>
+</html>
